@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты веб-студии | WebCraft</title>
+  <meta name="description" content="Свяжитесь со студией WebCraft: телефон, Telegram и email для обсуждения проекта. Отвечаем в будние дни с 10:00 до 19:00.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Контакты веб-студии | WebCraft">
+  <meta property="og:description" content="Свяжитесь со студией WebCraft по телефону, в Telegram или email.">
+  <meta property="og:image" content="https://ahmetorunov743.github.io/WebCraft/images.jfif">
+  <meta property="og:url" content="https://ahmetorunov743.github.io/WebCraft/contacts.html">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><b>Web</b>Craft</a>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html#services">Услуги</a></li>
+          <li><a href="index.html#portfolio">Портфолио</a></li>
+          <li><a href="calculator.html">Калькулятор</a></li>
+          <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+        </ul>
+        <a class="btn btn-primary" href="calculator.html">Рассчитать стоимость</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" style="padding-bottom:0;">
+      <div class="wrap">
+        <p class="eyebrow">На связи</p>
+        <h1>Связаться с нами</h1>
+        <p class="lede">Обсудите ваш проект с экспертом или задайте любой интересующий вопрос.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Наши координаты</h2>
+          <p style="color:var(--ink-soft);">Мы всегда на связи в рабочих мессенджерах и готовы ответить на ваш звонок в будние дни.</p>
+          <ul class="contact-list">
+            <li><span class="ico">☏</span> <a href="tel:+99361647766">+993 61 64 77 66</a></li>
+            <li><span class="ico">TG</span> <a href="https://t.me/ahmet_orunov">@ahmet_orunov</a></li>
+            <li><span class="ico">✉</span> <a href="mailto:ahmetorunov743@gmail.com">ahmetorunov743@gmail.com</a></li>
+            <li><span class="ico">🕘</span> Пн – Сб: с 10:00 до 19:00</li>
+          </ul>
+          <div class="map-frame" style="padding:24px; text-align:center; color:var(--ink-soft);">
+            <p style="margin:0;">Работаем полностью удалённо — без привязки к офису.<br>Связаться быстрее всего через Telegram.</p>
+          </div>
+        </div>
+
+        <div>
+          <h2>Напишите нам</h2>
+          <p style="color:var(--ink-soft); margin-top:-6px;">Оставьте сообщение, и мы ответим вам в течение рабочего дня.</p>
+          <form action="https://formspree.io/f/mojojoqe" method="POST">
+            <input type="hidden" name="_subject" value="Сообщение с сайта WebCraft">
+            <input type="hidden" name="subject" value="Сообщение с сайта WebCraft">
+            <input type="hidden" name="_next" value="https://ahmetorunov743.github.io/WebCraft/thanks.html">
+            <div class="field">
+              <label for="c-name">Имя</label>
+              <input type="text" id="c-name" name="Имя" required>
+            </div>
+
+            <div class="field">
+              <label>Как с вами связаться?</label>
+              <div class="method-toggle">
+                <label class="method-option">
+                  <input type="radio" name="Способ связи" value="Telegram" checked>
+                  <span>Telegram</span>
+                </label>
+                <label class="method-option">
+                  <input type="radio" name="Способ связи" value="WhatsApp">
+                  <span>WhatsApp</span>
+                </label>
+                <label class="method-option">
+                  <input type="radio" name="Способ связи" value="Email">
+                  <span>Email</span>
+                </label>
+              </div>
+
+              <div class="method-field" data-method-field="Telegram">
+                <label for="c-telegram">Ваш Telegram username</label>
+                <div class="input-prefix">
+                  <span class="prefix">@</span>
+                  <input type="text" id="c-telegram" name="Telegram" placeholder="username" required>
+                </div>
+              </div>
+
+              <div class="method-field" data-method-field="WhatsApp" hidden>
+                <label for="c-phone">Номер WhatsApp</label>
+                <div class="phone-row">
+                  <div class="country-select" data-country-select>
+                    <button type="button" class="country-select-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Код страны">
+                      <span data-country-display>+993</span>
+                    </button>
+                    <ul class="country-select-list" role="listbox" hidden>
+                      <li role="option" tabindex="0" aria-selected="true" data-code="+993" data-groups="2,2,2,2" data-placeholder="61 64 77 66">Туркменистан +993</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+7" data-groups="3,3,2,2" data-placeholder="912 345 67 89">Россия +7</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+7" data-groups="3,3,2,2" data-placeholder="701 234 56 78">Казахстан +7</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+375" data-groups="2,3,2,2" data-placeholder="29 123 45 67">Беларусь +375</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+380" data-groups="2,3,2,2" data-placeholder="50 123 45 67">Украина +380</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+998" data-groups="2,3,2,2" data-placeholder="90 123 45 67">Узбекистан +998</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+992" data-groups="2,3,2,2" data-placeholder="91 123 45 67">Таджикистан +992</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+996" data-groups="3,3,3" data-placeholder="700 123 456">Кыргызстан +996</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+374" data-groups="2,2,2,2" data-placeholder="77 12 34 56">Армения +374</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+994" data-groups="2,3,2,2" data-placeholder="50 123 45 67">Азербайджан +994</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+373" data-groups="2,2,2,2" data-placeholder="69 12 34 56">Молдова +373</li>
+                      <li role="option" tabindex="0" aria-selected="false" data-code="+995" data-groups="3,2,2,2" data-placeholder="555 12 34 56">Грузия +995</li>
+                    </ul>
+                    <input type="hidden" name="Код страны" value="+993" data-country-value>
+                  </div>
+                  <input type="tel" id="c-phone" name="Номер WhatsApp" inputmode="numeric" placeholder="61 64 77 66" data-phone-input data-groups="2,2,2,2" disabled required>
+                </div>
+              </div>
+
+              <div class="method-field" data-method-field="Email" hidden>
+                <label for="c-email">Ваш email</label>
+                <input type="email" id="c-email" name="Email" placeholder="you@example.com" disabled required>
+              </div>
+            </div>
+
+            <input type="hidden" name="WhatsApp ссылка" data-whatsapp-combined>
+
+            <div class="field">
+              <label for="c-message">Сообщение</label>
+              <textarea id="c-message" name="Сообщение" rows="5" required></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html"><b>Web</b>Craft</a>
+          <p style="margin-top:12px; max-width:280px;">Студия разработки сайтов для малого и среднего бизнеса.</p>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="mailto:ahmetorunov743@gmail.com">ahmetorunov743@gmail.com</a></li>
+            <li><a href="https://t.me/ahmet_orunov">@ahmet_orunov</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Инфо</h4>
+          <ul>
+            <li><a href="legal.html">Юридическая информация</a></li>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><b>WebCraft</b> · © <span data-year>2026</span> Все права защищены.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
